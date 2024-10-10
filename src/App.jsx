@@ -52,7 +52,7 @@ export default function App() {
   if (isLoading) return <div>LOADING...</div>;
 
   return (
-    <>
+    <div>
       <input
         placeholder="pokemon name"
         value={input}
@@ -67,6 +67,6 @@ export default function App() {
             {poke.name} - {poke.abilities[0].ability.name}
           </div>
         ))}
-    </>
+    </div>
   );
 }
